@@ -32,15 +32,8 @@ search = driver.find_element(By.NAME, 'q')
 search.send_keys('0816044')
 search.send_keys(Keys.ENTER)
 
-try:
-    print(driver.find_elements(By.XPATH, "/html/body/div[7]/div/div[11]/div/div[2]/div[2]/div/div/div[2]/div/div/div/div[1]/div/div/div[1]/div/a/h3")[0].text)
-except:
-    try:
-        print(driver.find_elements(By.XPATH, "/html/body/div[7]/div/div[11]/div/div[2]/div[2]/div/div/div[2]/div/div/div[1]/div/a/h3")[0].text)
-    except:
-        try:
-            print(driver.find_elements(By.XPATH, "/html/body/div[7]/div/div[11]/div/div[2]/div[2]/div/div/div[3]/div/div/div/div[1]/div/div/div[1]/div/a/h3")[0].text)
-        except:
-            print(driver.find_elements(By.XPATH, "/html/body/div[7]/div/div[11]/div/div[2]/div[2]/div/div/div[3]/div/div/div[1]/div/a/h3")[0].text)
+# try:
+results = driver.find_elements(By.XPATH, "//div[contains(@class, 'g')]/div[1]//h3")
+print(results[1].text)
 
 driver.close()
