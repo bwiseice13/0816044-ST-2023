@@ -574,7 +574,7 @@ $ gcc -fsanitize=address -g -o asan_t6 t6.c
 $ ./asan_t6
 ```
 ##### 只有 run a 陣列
-| Range       | is_redzone | ASan找的出來 |
+| Range       | is_redzone | ASan 找的出來 |
 | ----------- | ---------- | ------------ |
 | a[8]-a[15]  | yes        | yes          |
 | a[16]-a[23] | no         | no           |
@@ -582,18 +582,18 @@ $ ./asan_t6
 | a[32]-a[39] | no         | no           |
 | a[40]-      | no         | no           |
 ##### 只有 run b 陣列
-| Range       | is_redzone | ASan找的出來 |
+| Range       | is_redzone | ASan 找的出來 |
 | ----------- |:---------- | ------------ |
 | b[8]-b[15]  | yes        | yes          |
 | b[16]-b[23] | no         | no           |
 | b[24]-b[31] | no         | no           |
 | b[32]-      | no         | no           |
 ##### 同時 run a 和 b 陣列
-| Range       | is_redzone | ASan找的出來                  |
+| Range       | is_redzone | ASan 找的出來                  |
 | ----------- |:---------- |:----------------------------- |
 | a[8]-a[15]  | yes        | yes                           |
 | a[16]-a[23] | no         | no                            |
-| a[24]-a[31] | yes        | <span style="color:red"> yes </span>         |
+| a[24]-a[31] | yes        | (&#x1F534;) yes               |
 | a[32]-a[39] | no         | no                            |
 | a[40]-      | no         | no                            |
 | b[8]-b[15]  | yes        | yes                           |
