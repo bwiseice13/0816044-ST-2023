@@ -589,16 +589,14 @@ $ ./asan_t6
 | b[24]-b[31] | no         | no           |
 | b[32]-      | no         | no           |
 ##### 同時 run a 和 b 陣列
-````diff
 | Range       | is_redzone | ASan找的出來                  |
 | ----------- |:---------- |:----------------------------- |
 | a[8]-a[15]  | yes        | yes                           |
 | a[16]-a[23] | no         | no                            |
-| a[24]-a[31] | yes        | - yes                         |
+| a[24]-a[31] | yes        | ```diff - yes    ```          |
 | a[32]-a[39] | no         | no                            |
 | a[40]-      | no         | no                            |
 | b[8]-b[15]  | yes        | yes                           |
 | b[16]-b[23] | no         | no                            |
 | b[24]-b[31] | no         | no                            |
 | b[32]-      | no         | no                            |
-````
