@@ -4,7 +4,7 @@
 ---
 
 ### poc: the file that can trigger the vulnerability
-The file id/000000,sig/06,src/000000,op/flip1,pos/18can trigger the vulnerability.
+The file id/000000,sig/06,src/000000,op/flip1,pos/18 can trigger the vulnerability.
 
 The line 41 of bmpgrayscale.c is memset(pixel, gray, 2 * padding - 3); which will send 2\*padding-3 as third parameter size_t n.
 
