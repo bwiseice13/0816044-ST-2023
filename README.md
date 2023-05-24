@@ -7,3 +7,4 @@ NYCU Software Testing - 2023 Spring
 ![example workflow](https://github.com/benny12312311/0816044-ST-2023/actions/workflows/Lab03-CI.yml/badge.svg)     
 ![example workflow](https://github.com/benny12312311/0816044-ST-2023/actions/workflows/Lab04-CI.yml/badge.svg)     
 ![example workflow](https://github.com/benny12312311/0816044-ST-2023/actions/workflows/Midterm-CI.yml/badge.svg)  
+![example workflow](https://github.com/benny12312311/0816044-ST-2023/actions/workflows/Lab05-CI.yml/badge.svg)  
