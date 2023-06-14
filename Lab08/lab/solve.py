@@ -30,7 +30,7 @@ def solve():
 
     if simgr.found:
         input = simgr.found[0].posix.dumps(sys.stdin.fileno())
-        file_path = "solve_output"
+        file_path = "solve_input"
         with open(file_path, "a") as file:
             for i in range(0, 15):
                 integer_value = struct.unpack('<i', input[i*4:i*4+4])[0]
