@@ -31,11 +31,7 @@ def solve():
     if simgr.found:
         input = simgr.found[0].posix.dumps(sys.stdin.fileno())
 
-        file_path = "solve_output"
-        if os.path.isfile(file_path):
-            os.remove(file_path)
-
-        with open("solve_output", "a") as file:
+        with open(file_path, "a") as file:
             for i in range(0, 15):
                 integer_value = struct.unpack('<i', input[i*4:i*4+4])[0]
                 file.write(str(integer_value) + str('\n'))
