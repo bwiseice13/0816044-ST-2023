@@ -22,10 +22,6 @@ jobs:
           pip install bingraphvis
           sudo apt update
           sudo apt install -y graphviz
-      - name: Run example (just for demo)
-        run: |
-          cd Lab08/example
-          bash -c "time python3 solve.py"
       - name: Verify result
         run: |
           cd Lab08/lab
